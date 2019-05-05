@@ -1,0 +1,30 @@
+﻿  animation.cpp
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(47): warning C4244: 'argument': conversion from 'GLdouble' to 'GLfloat', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(63): warning C4244: 'argument': conversion from 'GLdouble' to 'GLfloat', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(71): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(74): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(78): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(80): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(88): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(90): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(92): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(99): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(101): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(102): warning C4244: 'argument': conversion from 'GLdouble' to 'GLfloat', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(103): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(123): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(124): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(126): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(128): warning C4244: 'argument': conversion from 'GLdouble' to 'GLfloat', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(139): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(146): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(150): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(172): warning C4244: 'argument': conversion from 'GLdouble' to 'GLfloat', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(173): warning C4244: 'argument': conversion from 'GLdouble' to 'GLfloat', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(187): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(191): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(201): warning C4244: '+=': conversion from 'GLdouble' to 'GLint', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(241): warning C4244: '+=': conversion from 'GLdouble' to 'GLint', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(246): warning C4244: '-=': conversion from 'GLdouble' to 'GLint', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(360): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
+  CGPROJECT.vcxproj -> C:\Users\Lenovo\source\repos\CGPROJECT\Debug\CGPROJECT.exe
