@@ -24,18 +24,7 @@ GLint crank_angle = 0;
 GLdouble crank_step = 5;
 
 
-GLshort shaded = TRUE, anim = FALSE;
-GLshort transparent = FALSE;
-
-
 GLdouble head_look_up_table[361];
-
-
-GLint list_piston_shaded = 1;
-GLint list_piston_texture = 2;
-GLint list_flywheel_shaded = 4;
-GLint list_flywheel_texture = 8;
-
 
 GLUquadricObj *obj;
 
@@ -45,10 +34,7 @@ void myBox(GLdouble x, GLdouble y, GLdouble z)
 {
 	glPushMatrix();
 	glScalef(x, y, z);
-	if (shaded)
-		glutSolidCube(1);
-	else
-		glutWireCube(1);
+	glutSolidCube(1);
 	glPopMatrix();
 }
 
@@ -125,12 +111,8 @@ void draw_crankbell(void)
 	myCylinder(obj, 0.06, 0.0, 0.34);
 	glTranslatef(0.0, 0.0, 0.22);
 	glRotatef(90, 0.0, 1.0, 0.0);
-	glRotatef(crank_angle - head_angle, 1.0, 0.0, 0.0);
-	if (shaded) {
-		glCallList(list_piston_shaded);
-	}
-	else
-		draw_piston();
+	glRotatef(crank_angle - head_angle, 1.0, 0.0, 0.0);	
+	draw_piston();
 	glPopMatrix();
 }
 void draw_crank(void)
@@ -147,12 +129,8 @@ void draw_crank(void)
 	draw_crankbell();
 	glPopMatrix();
 	glPushMatrix();
-	glTranslatef(-0.77, 0.0, 0.0);
-	if (shaded) {
-		glCallList(list_flywheel_shaded);
-	}
-	else
-		draw_flywheel();
+	glTranslatef(-0.77, 0.0, 0.0);	
+	draw_flywheel();
 	glPopMatrix();
 	glPopMatrix();
 }
@@ -160,15 +138,9 @@ void display(void)
 {
 	int pass;
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	glPushMatrix();
-	if (transparent) {
-		glEnable(GL_ALPHA_TEST);
-		pass = 2;
-	}
-	else {
-		glDisable(GL_ALPHA_TEST);
-		pass = 0;
-	}
+	glPushMatrix();	
+	glDisable(GL_ALPHA_TEST);
+	pass = 0;	
 	glRotatef(view_h, 0, 1, 0);
 	glRotatef(view_v, 1, 0, 0);
 	do {
@@ -196,47 +168,9 @@ void display(void)
 	glutSwapBuffers();
 	glPopMatrix();
 }
-void animation(void)
-{
-	if ((crank_angle += crank_step) >= 360)
-		crank_angle = 0;
-	head_angle = head_look_up_table[crank_angle];
-	glutPostRedisplay();
-}
 void keyboard(unsigned char key, int x, int y)
 {
-	switch (key) {
-	case 's':
-		if (shaded == FALSE) {
-			shaded = TRUE;
-			glShadeModel(GL_SMOOTH);
-			glEnable(GL_LIGHTING);
-			glEnable(GL_DEPTH_TEST);
-			glEnable(GL_COLOR_MATERIAL);
-			gluQuadricNormals(obj, GLU_SMOOTH);
-			gluQuadricDrawStyle(obj, GLU_FILL);
-		}
-		else {
-			shaded = FALSE;
-			glShadeModel(GL_FLAT);
-			glDisable(GL_LIGHTING);
-			glDisable(GL_DEPTH_TEST);
-			glDisable(GL_COLOR_MATERIAL);
-			gluQuadricNormals(obj, GLU_NONE);
-			gluQuadricDrawStyle(obj, GLU_LINE);
-			gluQuadricTexture(obj, GL_FALSE);
-		}
-		if (!shaded);
-		else
-			break;
-	case 'o':
-		if (transparent == FALSE) {
-			transparent = TRUE;
-		}
-		else {
-			transparent = FALSE;
-		}
-		break;
+	switch (key) {		
 	case 'a':
 		if ((crank_angle += crank_step) >= 360)
 			crank_angle = 0;
@@ -262,17 +196,7 @@ void keyboard(unsigned char key, int x, int y)
 	case '2':
 		if ((view_v -= ANGLE_STEP) <= 0)
 			view_v = 360;
-		break;
-	case ' ':
-		if (anim) {
-			glutIdleFunc(0);
-			anim = FALSE;
-		}
-		else {
-			glutIdleFunc(animation);
-			anim = TRUE;
-		}
-		break;
+		break;	
 	case '+':
 		if ((++crank_step) > 45)
 			crank_step = 45;
@@ -314,15 +238,6 @@ void menu(int val)
 {
 	unsigned char key;
 	switch (val) {
-	case 1:
-		key = 's';
-		break;
-	case 2:
-		key = ' ';
-		break;
-	case 4:
-		key = 'o';
-		break;
 	case 7:
 		key = '+';
 		break;
@@ -337,10 +252,7 @@ void menu(int val)
 void create_menu(void)
 {
 	glutCreateMenu(menu);
-	glutAttachMenu(GLUT_RIGHT_BUTTON);
-	glutAddMenuEntry("Shaded", 1);
-	glutAddMenuEntry("Animation", 2);
-	glutAddMenuEntry("Transparency", 4);
+	glutAttachMenu(GLUT_RIGHT_BUTTON);	
 	glutAddMenuEntry("Speed UP", 7);
 	glutAddMenuEntry("Slow Down", 8);
 }
@@ -368,19 +280,11 @@ void myinit(void)
 	glColorMaterial(GL_FRONT_AND_BACK, GL_DIFFUSE);
 	glEnable(GL_COLOR_MATERIAL);
 	glShadeModel(GL_SMOOTH);
-	glNewList(list_piston_shaded, GL_COMPILE);
 	draw_piston();
-	glEndList();
-	glNewList(list_flywheel_shaded, GL_COMPILE);
 	draw_flywheel();
-	glEndList();
 	gluQuadricTexture(obj, GL_TRUE);
-	glNewList(list_piston_texture, GL_COMPILE);
 	draw_piston();
-	glEndList();
-	glNewList(list_flywheel_texture, GL_COMPILE);
 	draw_flywheel();
-	glEndList();
 	gluQuadricTexture(obj, GL_FALSE);
 }
 void myReshape(int w, int h)
@@ -399,15 +303,12 @@ int main(int argc, char **argv)
 	puts("Steam Engine\n");
 	puts("Keypad Arrow keys (with NUM_LOCK on) rotates object.");
 	puts("Rotate crank: 'a' = anti-clock wise 'z' = clock wise");
-	puts("Crank Speed : '+' = Speed up by 1 '-' = Slow Down by 1");
-	puts("Toggle : 's' = Shading ");
-	puts(" : ' ' = Animation 'o' = Transparency");
-	puts(" : '0' = Right Light '1' = Left Light");
+	puts("Crank Speed : '+' = Speed up by 1 '-' = Slow Down by 1");	
 	puts(" Alternatively a pop up menu with all toggles is attached");
 	puts(" to the left mouse button.\n");
 	glutInitWindowSize(400, 400);
 	glutInit(&argc, argv);
-	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH |GLUT_MULTISAMPLE);
+	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH );
 	glutCreateWindow("Steam Engine");
 	glutDisplayFunc(display);
 	glutKeyboardFunc(keyboard);

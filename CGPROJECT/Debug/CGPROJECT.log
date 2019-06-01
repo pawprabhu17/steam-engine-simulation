@@ -1,30 +1,29 @@
-﻿  animation.cpp
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(47): warning C4244: 'argument': conversion from 'GLdouble' to 'GLfloat', possible loss of data
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(63): warning C4244: 'argument': conversion from 'GLdouble' to 'GLfloat', possible loss of data
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(71): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(74): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(78): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(80): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(88): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(90): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(92): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(99): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(101): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(102): warning C4244: 'argument': conversion from 'GLdouble' to 'GLfloat', possible loss of data
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(103): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(123): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(124): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(126): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(128): warning C4244: 'argument': conversion from 'GLdouble' to 'GLfloat', possible loss of data
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(139): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(146): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(150): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(172): warning C4244: 'argument': conversion from 'GLdouble' to 'GLfloat', possible loss of data
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(173): warning C4244: 'argument': conversion from 'GLdouble' to 'GLfloat', possible loss of data
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(187): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(191): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(201): warning C4244: '+=': conversion from 'GLdouble' to 'GLint', possible loss of data
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(241): warning C4244: '+=': conversion from 'GLdouble' to 'GLint', possible loss of data
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(246): warning C4244: '-=': conversion from 'GLdouble' to 'GLint', possible loss of data
-c:\users\lenovo\source\repos\cgproject\cgproject\animation.cpp(360): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
+﻿  test.cpp
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(36): warning C4244: 'argument': conversion from 'GLdouble' to 'GLfloat', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(49): warning C4244: 'argument': conversion from 'GLdouble' to 'GLfloat', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(57): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(60): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(64): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(66): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(74): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(76): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(78): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(85): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(87): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(88): warning C4244: 'argument': conversion from 'GLdouble' to 'GLfloat', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(89): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(109): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(110): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(112): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(114): warning C4244: 'argument': conversion from 'GLdouble' to 'GLfloat', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(121): warning C4244: 'argument': conversion from 'GLint' to 'GLfloat', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(128): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(132): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(144): warning C4244: 'argument': conversion from 'GLdouble' to 'GLfloat', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(145): warning C4244: 'argument': conversion from 'GLdouble' to 'GLfloat', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(159): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(163): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(175): warning C4244: '+=': conversion from 'GLdouble' to 'GLint', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(184): warning C4244: '-=': conversion from 'GLdouble' to 'GLint', possible loss of data
+c:\users\lenovo\source\repos\cgproject\cgproject\test.cpp(280): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
   CGPROJECT.vcxproj -> C:\Users\Lenovo\source\repos\CGPROJECT\Debug\CGPROJECT.exe
